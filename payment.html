@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оплата билетов</title>
+    <link rel="stylesheet" href="styles.css">
+<body>
+
+    <div class="payment-section">
+        <h2>Оплата билетов</h2>
+
+        <div class="payment-details">
+            <h3>Информация о заказе</h3>
+            <p>Тип билета: <span id="ticket-type">Технический билет</span></p>
+            <p>Количество билетов: <span id="ticket-quantity">1</span></p>
+            <p>Сумма: €<span id="ticket-total">20</span></p>
+        </div>
+
+        <div class="payment-form">
+            <h3>Выберите способ оплаты</h3>
+            <form id="payment-form">
+                <label for="card-number">Номер карты:</label>
+                <input type="text" id="card-number" name="card-number" placeholder="Номер карты" required>
+
+                <label for="card-expiry">Срок действия:</label>
+                <input type="text" id="card-expiry" name="card-expiry" placeholder="MM/YY" required>
+
+                <label for="card-cvc">CVC:</label>
+                <input type="text" id="card-cvc" name="card-cvc" placeholder="CVC" required>
+
+                <button type="submit">Оплатить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+</html>
